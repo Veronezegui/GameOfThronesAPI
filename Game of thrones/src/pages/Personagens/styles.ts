@@ -11,13 +11,14 @@ export const Navegação = styled.div`
   span {
     margin-left: 20px;
     margin-right: 20px;
+    font-weight: bold;
   }
 `;
 
 export const Main = styled.div`
   width: 100%;
   height: 100%;
-  background: #fff;
+  background-color: #F5F1F0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,7 @@ export const Menu = styled.div`
   flex-wrap: wrap;
   margin-top: 100px auto;
   padding: 100px;
+ 
 
   img {
     margin-bottom: 20px;
@@ -114,6 +116,8 @@ export const Menu = styled.div`
     position: relative;
     filter: brightness(-500%)
   }
+
+  
 `;
 
 export const Card = styled.div`
@@ -130,26 +134,30 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 30vh;
     background: #161925;
     text-decoration: none;
     color: white;
     padding: 10px;
     border-radius: 3px;
+    position: relative;
   }
   a:hover {
     transform: scale(1.1);
   }
   span {
     position: absolute;
-    color: white;
+    color: black;;
     width: 100%;
-    height: 90%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
   }
 
   @media (max-width: 600px) {

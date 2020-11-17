@@ -113,10 +113,12 @@ export const Menu = styled.div`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   min-height: 350px;
   width: 600px;
   margin: 5px auto;
+  margin-left: 30vw;
   text-align: left;
 
   a {
@@ -133,16 +135,19 @@ export const Card = styled.div`
   p {
     padding: 40px;
     flex-direction: column;
+
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 105px;
+    margin-left: 45px;
     margin-right: 0px;
     text-indent: 0px;
-    height: 50px;
+    height: auto;
     text-align: justify;
     background: #e5e5e5;
     border-radius: 9px;
     width: 100%;
+    max-width: 600px;
+    overflow: hidden;
   }
   img {
     left: 600px;

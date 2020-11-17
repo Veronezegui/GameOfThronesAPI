@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, {useEffect, useState} from 'react';
 import { BiArrowBack } from 'react-icons/bi';
-import tully from '../../assets/images/tully.jpg';
 import api from '../../services/api';
 import { Header, Main, Menu, Card, Footer } from './styles';
 import { RouteComponentProps } from 'react-router-dom';

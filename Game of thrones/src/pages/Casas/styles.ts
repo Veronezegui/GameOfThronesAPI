@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const Navegação = styled.div`
   margin-top: 50px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: row;
   align-items: right;
   justify-content: flex-end;
   position: relative;
-  left: 37vw;
+  font-weight: bold;
+  left: 40vw;
   span {
     margin-left: 20px;
     margin-right: 20px;
@@ -17,7 +19,7 @@ export const Navegação = styled.div`
 export const Main = styled.div`
   width: 100%;
   height: 100%;
-  background: #fff;
+  background-color: #F5F1F0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,22 +133,27 @@ export const Card = styled.div`
   margin: 50px auto;
 
   span {
+    background: white;
     position: absolute;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content:center;
-    height: 40vh;
-    width: 11vw;
+    width: 15vw;
+    height: 27vh;
     font-weight: bold;
+    font-size: 20px;
     text-align:center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
   }
 
   a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 30vh;
     background: #161925;
     text-decoration: none;
     color: white;

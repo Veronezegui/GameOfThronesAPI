@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, {useState, useEffect} from 'react';
 import { BiArrowBack } from 'react-icons/bi';
-import jon from '../../assets/images/jon.jpg';
 import api from '../../services/api';
 import { RouteComponentProps } from 'react-router-dom';
 
@@ -16,8 +15,11 @@ interface ConteudoPersonagem {
   gender: string;
   culture: string;
   born: string;
+  died: string;
   titles: string[];
   aliases: string[];
+  father: string;
+  mother: string;
 
 }
 
@@ -55,10 +57,11 @@ const Jon: React.FC<RouteComponentProps<Conteudo>> = props => {
                 <p>gender: {CharactersAtuais.gender}</p>
                 <p>culture: {CharactersAtuais.culture}</p>
                 <p>born: {CharactersAtuais.born}</p>
+                <p>died: {CharactersAtuais.died}</p>
                 <p>titles: {CharactersAtuais.titles}</p>
-                <p>
-                  aliases: {CharactersAtuais.aliases}
-                </p>
+                <p>aliases: {CharactersAtuais.aliases}</p>
+                <p>father: {CharactersAtuais.father}</p>
+                <p>mother: {CharactersAtuais.mother}</p>
               </div>
             </Card>
           :

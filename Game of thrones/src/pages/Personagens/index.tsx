@@ -1,9 +1,8 @@
-import React, { useState, FormEvent, useEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 import { BiArrowBack, BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi';
 import api from '../../services/api';
 import { Main, Header, Menu, Card, Footer, Navegação } from './styles';
 
-import jon from '../../assets/images/jon.jpg';
 
 interface CharacterData {
   url:string;
@@ -39,14 +38,14 @@ const Personagens: React.FC = () => {
   return (
     <Main>
       <Header>
-        <h1>Personagens</h1>
+        <h1>Characters</h1>
         <a href="/">
           <BiArrowBack>Home</BiArrowBack>
         </a>
       </Header>
       <Navegação>
         <BiLeftArrowAlt onClick={back} />
-        <span>{`Página ${PaginaAtual <= 0 ? 1:PaginaAtual}`}</span>
+        <span>{`Page ${PaginaAtual <= 0 ? 1:PaginaAtual}`}</span>
         <BiRightArrowAlt onClick={next}/>
       </Navegação>
       <Menu>
@@ -54,9 +53,8 @@ const Personagens: React.FC = () => {
           CharactersAtuais.map((personagem, index) => {
             return (
               <Card key={index}>
-                <img src={jon} alt="jon snow"/>
                 <span>{personagem.name}</span>
-                <a href={`/DetalhesPersonagem/${PaginaAtual >= 2 ? (PaginaAtual * 10) - 10 + index + 1 : index + 1}`}> + Informações</a>
+                <a href={`/DetalhesPersonagem/${PaginaAtual >= 2 ? (PaginaAtual * 10) - 10 + index + 1 : index + 1}`}> + More</a>
               </Card>
             )
           })

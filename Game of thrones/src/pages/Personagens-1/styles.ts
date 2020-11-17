@@ -95,6 +95,7 @@ export const Menu = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 100px auto;
+  margin-left: -45px;
   padding: 50px;
 
   img {
@@ -137,11 +138,12 @@ export const Card = styled.div`
     margin-left: 20px;
     margin-right: 0px;
     text-indent: 0px;
-    height: 50px;
+    min-height: 50px;
     text-align: justify;
     background: #e5e5e5;
     border-radius: 9px;
     width: 100%;
+    text-align: justify;
   }
   img {
     left: 600px;

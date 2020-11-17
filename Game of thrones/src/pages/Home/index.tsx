@@ -22,24 +22,26 @@ const Home: React.FC = () => {
         <section>
           <img src={personagens} alt="personagens" />
           <a href="/Personagens" className="P1">
-            Personagens
+            Characters
           </a>
         </section>
         <section>
           <img src={houses} alt="casas" />
           <a href="/Casas" className="P2">
-            Casas
+            Houses
           </a>
         </section>
         <section>
           <img src={books} alt="livros" />
           <a href="/Livros" className="P3">
-            Livros
+            Books
           </a>
         </section>
       </Menu>
       <Footer>
-        <p>Todos os direitos reservados.</p>
+        <p>
+          All rights reserved
+        </p>
       </Footer>
     </Main>
   );

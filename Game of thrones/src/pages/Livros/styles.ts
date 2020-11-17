@@ -1,59 +1,24 @@
 import styled from 'styled-components';
 
-export const Form = styled.form`
+export const Navegação = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  margin-left: 120px auto;
-  padding: 10px;
-
-  button {
-    padding: 10px;
-    background: linear-gradient(
-      -45deg,
-      rgb(240, 248, 255),
-      rgb(30, 144, 255),
-      rgb(65, 105, 225),
-      rgb(25, 25, 112)
-    );
-    background-image: linear-gradient(
-      -45deg,
-      rgb(240, 248, 255),
-      rgb(30, 144, 255),
-      rgb(65, 105, 225),
-      rgb(25, 25, 112)
-    );
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: 500% 500%;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-
-    color: white;
-
-    border: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  input {
-    width: 300px;
-    height: 50px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px solid black;
-    padding: 20px;
+  align-items: right;
+  justify-content: flex-end;
+  position: relative;
+  left: 40vw;
+  span {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
   }
 `;
 
 export const Main = styled.div`
   width: 100%;
   height: 100%;
-  background: #fff;
+  background-color: #F5F1F0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +97,7 @@ export const Menu = styled.div`
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 100px auto;
+  margin-top: 30px auto;
   margin: 100px auto;
   padding: 100px;
 
@@ -157,7 +122,7 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 30vh;
     background: #161925;
     text-decoration: none;
     color: white;
@@ -166,6 +131,21 @@ export const Card = styled.div`
   }
   a:hover {
     transform: scale(1.1);
+  }
+  span {
+    position: absolute;
+    color: black;;
+    width: 280px;
+    height: 250px;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
   }
 
   @media (max-width: 600px) {
